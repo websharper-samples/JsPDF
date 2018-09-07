@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>JsPDF</title>
+        <link rel="stylesheet" href="Content/JsPDF.css" />
+        <script src="Content/JsPDF.head.js"></script>
+        <style>
+            /* Don't show the not-yet-loaded templates */
+            [ws-template], [ws-children-template] { display: none; }
+            .pdf-holder {
+                height: 100vh;
+                width:  100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main" ws-children-template="Main">
+            <div class="pdf-holder">
+                <div ws-replace="PDF"></div>
+            </div>
+        </div>
+        <script src="Content/JsPDF.js"></script>
+    </body>
+</html>
